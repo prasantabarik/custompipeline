@@ -3,7 +3,7 @@ node('master') {
     stage('checkout') {
         git branch: 'master',
             credentialsId: 'github-sshkey',
-            url: 'git@github.com:RoyalAholdDelhaize/ah-commerce-edp-custom-pipelines.git'
+            url: 'git@github.com:prasantabarik/custompipeline.git'
     }
     stage("kube-hunter") {
         withCredentials([string(credentialsId: "${jobBaseName}.url", variable: "serverUrl")]) {
