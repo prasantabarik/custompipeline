@@ -1,3 +1,3 @@
-@Library(['edp-library-stages', 'edp-library-pipelines']) _
+@Library(['custompipeline', 'edp-library-pipelines']) _
 
-Deploy()
+ExternalDeployStage()
